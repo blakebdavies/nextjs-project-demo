@@ -18,9 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-screen h-screen">
+        <div className="w-screen h-screen bg-gradient-to-b from-blue-50 to-red-50">
+          <div className="h-24">
           <Header />
-        {children}
+          </div>
+          <div className="h-24">
+          {children}
+          </div>
         </div>
         </body>
     </html>
